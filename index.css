@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Oswald&display=swap');
+
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+
+.navbar{
+    background-color: #9b2295;
+}
+.jumbotron{
+    background-image: url(multimedia/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.jumbotron h1{
+    text-shadow: 0 0 5px #333;
+    color: #13b3c1;
+    font-family: 'Bebas Neue', cursive;
+}
+.jumbotron p{
+    text-shadow: 0 0 5px #333;
+    color: #000;
+}
+.jumbotron button{
+    background-color: #9b2295ba;
+    border: #9b2295;
+}
+h2{
+    text-align: center;
+    background-color: #13b3c1;
+    color: white;
+    padding: 5px;
+    text-shadow: 0 0 5px #333;
+}
+.elegirnos{
+    background-color: white;
+    border: 2px;
+    padding: 5px;
+    margin: 5px;
+    color: #9b2295;
+    text-align: center;
+}
+.complementario{
+    background-color: #13b3c1b4;
+    height: 400px;
+    color: white;
+
+}
+.nleft{
+    background-image: url(multimedia/gatoinicio.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.nright h3{
+    text-align: center;
+    text-shadow: 0 0 5px #333;
+}
+.pie{
+    background-color: #9b2295;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+.redes{
+    background-color: #9b2295;
+    text-align: center;
+}
