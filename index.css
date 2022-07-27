@@ -12,6 +12,9 @@ font-family: 'Oswald', sans-serif;*/
 .navbar{
     background-color: #9b2295;
 }
+body {
+    overflow-x: hidden;
+ }
 .jumbotron{
     background-image: url(multimedia/banner.jpg);
     background-size: cover;
@@ -21,12 +24,14 @@ font-family: 'Oswald', sans-serif;*/
 }
 .jumbotron h1{
     text-shadow: 0 0 5px #333;
-    color: #13b3c1;
-    font-family: 'Bebas Neue', cursive;
+    color: #2a2f30;
+    font-family:'Bebas Neue', cursive;
 }
 .jumbotron p{
     text-shadow: 0 0 5px #333;
     color: #000;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
 }
 .jumbotron button{
     background-color: #9b2295ba;
@@ -38,6 +43,7 @@ h2{
     color: white;
     padding: 5px;
     text-shadow: 0 0 5px #333;
+    font-family: 'Oswald', sans-serif;
 }
 .elegirnos{
     background-color: white;
@@ -46,12 +52,19 @@ h2{
     margin: 5px;
     color: #9b2295;
     text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 .complementario{
     background-color: #13b3c1b4;
     min-height: 400px;
     color: white;
-
+    font-family: 'Inter', sans-serif;
+}
+.complementario h3{
+    font-size: 40px;
+}
+article p{
+    color: #000;
 }
 .nleft{
     background-image: url(multimedia/gatoinicio.jpg);
