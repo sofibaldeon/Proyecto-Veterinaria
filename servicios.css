@@ -11,7 +11,10 @@ font-family: 'Oswald', sans-serif;*/
 
 .navbar{
     background-color: #9b2295;
+    z-index: 99;
+    width: 100%;
 }
+
 .jumbotron{
     background-image: url(multimedia/banner.jpg);
     background-size: cover;
@@ -22,7 +25,7 @@ font-family: 'Oswald', sans-serif;*/
 .jumbotron h1{
     text-shadow: 0 0 5px #333;
     color: #13b3c1;
-    font-family: 'Bebas Neue', cursive;
+    font-family:'Inter', sans-serif;
 }
 .jumbotron p{
     text-shadow: 0 0 5px #333;
@@ -32,40 +35,29 @@ font-family: 'Oswald', sans-serif;*/
     background-color: #9b2295ba;
     border: #9b2295;
 }
-h2{
-    text-align: center;
-    background-color: #13b3c1;
-    color: white;
-    padding: 5px;
-    text-shadow: 0 0 5px #333;
-}
-.elegirnos{
+.servicios{
     background-color: white;
-    border: 2px;
-    padding: 5px;
-    margin: 5px;
-    color: #9b2295;
-    text-align: center;
 }
-.complementario{
-    background-color: #13b3c1b4;
-    min-height: 400px;
-    color: white;
+.item{
+    color: #9b2295;
+    padding: 10px;
+    display: inline-block;
 
 }
-.nleft{
-    background-image: url(multimedia/gatoinicio.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+.item img{
+    width: 100px;
+    height: auto;
 }
-.nright{
-    min-height: 200px;
-}
-.nright h3{
+.item h4{
+    color: #13b3c1;
     text-align: center;
-    text-shadow: 0 0 5px #333;
+    font-family:'Oswald', sans-serif;
 }
+.item p{
+    color: #000;
+    text-align: center;
+}
+
 .pie{
     background-color: #9b2295;
     color: white;
