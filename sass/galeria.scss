@@ -77,7 +77,7 @@ $fontbody: 'Inter', sans-serif;
     background-position: center;
     border-radius: 0;
     margin-bottom: 0;
-    h1{
+    & h1{
         text-shadow: 0 0 5px #333;
         color: $colortitulo1;
         font-family: $fonttitulos;
