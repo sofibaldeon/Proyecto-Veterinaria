@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #9b2295;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+.pie {
+  background-color: #9b2295;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.redes i {
+  background-color: #9b2295;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  transition: all 0.7s;
+}
+
+.redes i:hover {
+  color: #13b3c1;
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: all 0.7s;
+}
+
+::-moz-selection {
+  background-color: #13b3c1;
+  color: #9b2295;
+}
+
+::selection {
+  background-color: #13b3c1;
+  color: #9b2295;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #333;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  box-shadow: inset 0 0 6px #333;
+  background-color: #13b3c1;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #13b3c1;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  font-size: 27px;
+  line-height: 40px;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff;
+}
+
+.jumbotron {
+  background-image: url(/multimedia/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.jumbotron h1 {
+  text-shadow: 0 0 5px #333;
+  color: #2a2f30;
+  font-family: v "Bebas Neue", cursive;
+}
+.jumbotron p {
+  text-shadow: 0 0 5px #333;
+  color: #000;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+.jumbotron button {
+  background-color: #9b2295;
+  border: #9b2295;
+}
+
+#galeria img {
+  width: 100%;
+  height: 460px;
+}
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 10px;
+}/*# sourceMappingURL=galeria.css.map */
