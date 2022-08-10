@@ -88,7 +88,7 @@
 .jumbotron h1 {
   text-shadow: 0 0 5px #333;
   color: #2a2f30;
-  font-family: v "Bebas Neue", cursive;
+  font-family: "Bebas Neue", cursive;
 }
 .jumbotron p {
   text-shadow: 0 0 5px #333;
@@ -101,69 +101,70 @@
   border: #9b2295;
 }
 
-#galeria img {
-  width: 100%;
-  height: 460px;
+h2 {
+  text-align: center;
+  background-color: #13b3c1;
+  color: white;
+  padding: 5px;
+  text-shadow: 0 0 5px #333;
+  font-family: "Oswald", sans-serif;
 }
-#galeria img:hover {
-  border: 5px solid #f7f7f7;
-}
-#galeria .col-lg-4 {
-  margin: 0 !important;
+
+.elegirnos {
+  background-color: white;
+  border: 2px;
   padding: 10px;
+  margin: 10px;
 }
-
-.btn-bcolor1 {
-  background-color: rgba(19, 179, 193, 0.7764705882);
-  height: 40px;
-  width: cover;
-  border: 2px solid #fff;
+.elegirnos h3 {
+  color: #9b2295;
   text-align: center;
-  font-size: 20px;
-  color: #fff;
-  font-family: "Oswald", sans-serif;
-  border-radius: 4%;
-  padding: 5px;
+  font-family: "Inter", sans-serif;
 }
-
-.btn-bcolor2 {
-  background-color: rgba(155, 34, 149, 0.7882352941);
-  height: 40px;
-  width: cover;
-  border: 2px solid #fff;
+.elegirnos p {
+  color: #000;
   text-align: center;
-  font-size: 20px;
-  color: #fff;
-  font-family: "Oswald", sans-serif;
-  border-radius: 4%;
-  padding: 5px;
-}
-
-.btn-bcolor3 {
-  background-color: rgba(197, 24, 197, 0.704);
-  height: 40px;
-  width: cover;
-  border: 2px solid #fff;
-  text-align: center;
-  font-size: 20px;
-  color: #fff;
-  font-family: "Oswald", sans-serif;
-  border-radius: 4%;
-  padding: 5px;
-}
-
-.extend1, .extend--2 span, .extend--2 {
-  border: 2px #fff;
-  background-color: rgba(19, 179, 193, 0.4666666667);
-  height: 40px;
-  width: cover;
-  color: #fff;
-  font-size: medium;
   font-family: "Inter", sans-serif;
 }
 
-.extend--2 {
-  border-width: 3px;
+.banner2 {
+  background-image: url(/multimedia/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+.banner2 p {
+  text-align: center;
+  color: #13b3c1;
+  font-size: 30px;
+}
+
+.complementario {
+  background-color: rgba(19, 179, 193, 0.7058823529);
+  min-height: 400px;
+  padding: 20px;
+  color: white;
+}
+.complementario h3 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+}
+.complementario p {
+  color: #000;
+  font-size: 20px;
   color: #fff;
-  font-size: medium;
-}/*# sourceMappingURL=galeria.css.map */
+  font-family: "Inter", sans-serif;
+}
+.complementario .nleft {
+  background-image: url(/multimedia/gatoinicio.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.complementario .nright {
+  min-height: 200px;
+}
+.complementario .nright h3 {
+  text-align: center;
+  text-shadow: 0 0 5px #333;
+}/*# sourceMappingURL=index.css.map */

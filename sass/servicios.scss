@@ -7,11 +7,12 @@
 
 $colorprincipal: #9b2295;
 $colorsecundario:#13b3c1;
+$color1transp: #13b3c1b4;
 $colortitulo1: #2a2f30;
 $colortitulo2: #13b3c1;
 $colortextobody: #000;
 $colorfondoprincipal: white;
-$fonttitulos:v'Bebas Neue', cursive;
+$fonttitulos:'Bebas Neue', cursive;
 $fontsub: 'Oswald', sans-serif;
 $fontbody: 'Inter', sans-serif;
 
@@ -96,56 +97,69 @@ $fontbody: 'Inter', sans-serif;
         border: $colorprincipal;
     }
 }
-#galeria{
-    img{
-        width: 100%;
-        height: 460px;
-    }
-    img:hover{
-        border: 5px solid #f7f7f7;
-}
-    .col-lg-4{
-        margin: 0 !important;
-        padding: 10px;
-    }
-    
-}
-$conocenos: (
-    bcolor1: #13b3c1c6,
-    bcolor2: #9b2295c9,
-    bcolor3: rgba(197, 24, 197, 0.704),
-);
-
-@each $bcolor, $colores in $conocenos {
-    .btn-#{$bcolor} {
-    background-color: $colores;
-    height: 40px;
-    width: cover;
-    border: 2px solid #fff;
+.banner2{
+    background-image: url(/multimedia/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    p{
     text-align: center;
-    font-size: 20px;
-    color: #fff;
-    font-family: $fontsub;
-    border-radius: 4%;
-    padding: 5px;
+    color: $colortitulo2;
+    font-size: 30px;
     }
-    
 }
-.extend1 {
-    border: 2px #fff;
-    background-color: #13b3c177;
-    height: 40px;
-    width: cover;
-    color: #fff;
-    font-size: medium;
-    font-family: $fontbody; 
-}
-.extend--2 {
-    @extend .extend1;
-    border-width: 3px;
-    color: #fff;
-    font-size: medium;
-    span{
-        @extend .extend1
+.item{
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    img{
+        width: 100px;
+        height: auto;
     }
+    h4{
+        color: $colorsecundario;
+        text-align: center;
+        font-family:$fontsub;
+    }
+    p{
+        color: $colortextobody;
+        text-align: center;
+        font-family: $fontbody;
+    }
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px;
+}
+.imagenes{
+    img{
+        width: 350px;
+        justify-content: center;
+    }
+}
+.carousel-indicators {
+    li{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid $colorsecundario;
+    background-color: $color1transp;
+    }
+}
+.carousel-control-prev-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #13b3c1;
+    background-color: #13b3c1ad;
+}
+.carousel-control-next-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #13b3c1;
+    background-color: #13b3c1ad;
 }

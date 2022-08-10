@@ -7,11 +7,12 @@
 
 $colorprincipal: #9b2295;
 $colorsecundario:#13b3c1;
+$color1transp: #13b3c1b4;
 $colortitulo1: #2a2f30;
 $colortitulo2: #13b3c1;
 $colortextobody: #000;
 $colorfondoprincipal: white;
-$fonttitulos:v'Bebas Neue', cursive;
+$fonttitulos:'Bebas Neue', cursive;
 $fontsub: 'Oswald', sans-serif;
 $fontbody: 'Inter', sans-serif;
 
@@ -20,6 +21,23 @@ $fontbody: 'Inter', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
 }
+.info{
+    background-color: white;
+    border: 2px;
+    padding: 10px;
+    margin: 10px;
+    h4{
+    color: $colorprincipal;
+    text-align: center;
+    font-family: $fontbody;
+    }
+    p{
+    color: $colortextobody;
+    text-align: center;
+    font-family: $fontbody;
+    }
+}
+
 .pie{
     background-color: $colorprincipal;
     color: white;
@@ -96,56 +114,56 @@ $fontbody: 'Inter', sans-serif;
         border: $colorprincipal;
     }
 }
-#galeria{
-    img{
-        width: 100%;
-        height: 460px;
-    }
-    img:hover{
-        border: 5px solid #f7f7f7;
-}
-    .col-lg-4{
-        margin: 0 !important;
-        padding: 10px;
-    }
-    
-}
-$conocenos: (
-    bcolor1: #13b3c1c6,
-    bcolor2: #9b2295c9,
-    bcolor3: rgba(197, 24, 197, 0.704),
-);
-
-@each $bcolor, $colores in $conocenos {
-    .btn-#{$bcolor} {
-    background-color: $colores;
-    height: 40px;
-    width: cover;
-    border: 2px solid #fff;
+h2{
     text-align: center;
-    font-size: 20px;
-    color: #fff;
-    font-family: $fontsub;
-    border-radius: 4%;
+    background-color: $colorsecundario;
+    color: white;
     padding: 5px;
-    }
-    
+    text-shadow: 0 0 5px #333;
+    font-family: $fontsub;
 }
-.extend1 {
-    border: 2px #fff;
-    background-color: #13b3c177;
-    height: 40px;
-    width: cover;
-    color: #fff;
-    font-size: medium;
-    font-family: $fontbody; 
-}
-.extend--2 {
-    @extend .extend1;
-    border-width: 3px;
-    color: #fff;
-    font-size: medium;
-    span{
-        @extend .extend1
+.horarios{
+    background-color: $color1transp;
+    min-height: 400px;
+    padding: 20px;
+    color: white;
+    h3{
+        font-size: 30px;
+        font-family: $fontbody;
+        color: $colorprincipal;
     }
+    p{
+        font-size: 20px;
+        color: #fff;
+        font-family: $fontbody;
+    }
+    .nleft{
+        background-image: url(/multimedia/gatocontacto.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 420px;
+    }
+    .nright{
+        min-height: 420px;
+        h3{
+            text-align: center;
+            text-shadow: 0 0 5px #333;
+        }
+    }
+}
+.banner2{
+    background-image: url(/multimedia/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    p{
+    text-align: center;
+    color: $colortitulo2;
+    font-size: 30px;
+    }
+}
+.eform{
+    font-family: $fontbody;
+    padding: 20px;
+    margin: 20px;
 }

@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Oswald&display=swap');
+
+$colorprincipal: #9b2295;
+$colorsecundario:#13b3c1;
+$color1transp: #13b3c1b4;
+$colortitulo1: #2a2f30;
+$colortitulo2: #13b3c1;
+$colortextobody: #000;
+$colorfondoprincipal: white;
+$fonttitulos:'Bebas Neue', cursive;
+$fontsub: 'Oswald', sans-serif;
+$fontbody: 'Inter', sans-serif;
+
+.navbar{
+    background-color: $colorprincipal;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.pie{
+    background-color: $colorprincipal;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+.redes i{
+    background-color: $colorprincipal;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    transition: all 0.7s;
+}
+.redes i:hover{
+    color: $colorsecundario;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: all 0.7s;
+}
+::selection{
+    background-color: $colorsecundario;
+    color: $colorprincipal;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px #333;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    box-shadow: inset 0 0 6px #333;
+    background-color: $colorsecundario ;
+}
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: $colorsecundario;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 27px;
+    line-height: 40px;
+    color: whitesmoke;
+    border:3px solid whitesmoke;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff;
+}
+.jumbotron{
+    background-image: url(/multimedia/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    margin-bottom: 0;
+    & h1{
+        text-shadow: 0 0 5px #333;
+        color: $colortitulo1;
+        font-family: $fonttitulos;
+    }
+    p{
+        text-shadow: 0 0 5px #333;
+        color: $colortextobody;
+        font-size: 20px;
+        font-family: $fontbody; 
+    }
+    button{
+        background-color: $colorprincipal;
+        border: $colorprincipal;
+    }
+}
+h2{
+    text-align: center;
+    background-color: $colorsecundario;
+    color: white;
+    padding: 5px;
+    text-shadow: 0 0 5px #333;
+    font-family: $fontsub;
+}
+.elegirnos{
+    background-color: white;
+    border: 2px;
+    padding: 10px;
+    margin: 10px;
+
+    h3{
+    color: $colorprincipal;
+    text-align: center;
+    font-family: $fontbody;
+    }
+    p{
+    color: $colortextobody;
+    text-align: center;
+    font-family: $fontbody;
+    }
+}
+section{
+    background-color: $colorsecundario;
+    min-height: 600px;
+    .nleft{
+    background-image: url(/multimedia/kitten.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    }
+    .nright{
+        h2{
+            font-size: 30px;
+            font-family: $fontsub;
+            color: #fff;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            font-family: $fontbody;
+            color: #fff;
+        }
+    }
+    .nleft2{
+        h2{
+            font-size: 30px;
+            font-family: $fontsub;
+            color: #fff;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            font-family: $fontbody;
+            color: #fff;
+        }
+    }
+    .nright2{
+    background-image: url(/multimedia/puppy.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    }
+    .nleft3{
+    background-image: url(/multimedia/cat.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+        }
+    .nright3{
+    height: 600px;
+        h2{
+        font-size: 30px;
+        font-family: $fontsub;
+        color: #fff;
+        text-align: center;
+        }
+        h3{
+            font-size: 22px;
+            font-family: $fontbody;
+            color: $colorprincipal;
+        }
+        p{
+        font-size: 20px;
+        font-family: $fontbody;
+        color: #fff;
+        }
+        }
+}
+.banner2{
+    background-image: url(/multimedia/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    p{
+    text-align: center;
+    color: $colortitulo2;
+    font-size: 30px;
+    }
+}
+@mixin size-btn($h, $w){
+    height: $h;
+    width: $w;
+}
+.btn{
+    border: 0;
+    margin: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-family: $fontsub;
+    background-color: $color1transp;
+    border-radius: 4px;
+    
+    :hover{
+        color: $colorprincipal;
+    }
+    @include size-btn(40px, 150px);
+
+    &--1{
+        background-color: $color1transp;
+        color: #fff;
+    }
+    &--2{
+        background-color: $color1transp;
+        color: #fff;
+    }
+}
+
